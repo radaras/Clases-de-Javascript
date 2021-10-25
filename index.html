@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>capitulo 02</title>
+</head>
+<body>
+<h1>Clase de If</h1>
+<label>Ingrese Edad</label> 	<input type="number" id="num1"><br/> 
+<button onclick="llamarClick()">
+	Ejecutar
+</body>
+<script>	
+
+   function llamarClick(){
+   var num1=document.getElementById("num1").value;
+   alert(mayoredad(num1))
+}
+  function mayoredad(edad){
+  	let resultado=''
+
+    if(edad>=150 || edad<=0){
+      resultado='edad fuera de rango'
+    }
+    else {
+    
+  	if(edad>=18){
+  		resultado='es mayor de edad'
+  	}
+  	else{
+  		resultado='es menor de edad'
+  	}
+}
+  	return resultado
+
+
+  }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Clase For</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+
+let listadoDeNotas=[6,7,1,10,16,12,19,20,5]
+let cantaprobados= 0
+let cantdesaprobados= 0
+for(var i = 0;  i<= listadoDeNotas.length; i++){
+		console.log(listadoDeNotas[i])
+
+	if (listadoDeNotas[i]>10 && listadoDeNotas[i]<=20){
+	cantaprobados=cantaprobados+1
+    }
+
+    if (listadoDeNotas[i]>=0 && listadoDeNotas[i]<=10){
+	cantdesaprobados=cantdesaprobados+1
+    }				
+}
+alert(cantaprobados)
+alert(cantdesaprobados)
+
+
+</script>
+</html>

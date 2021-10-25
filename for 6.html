@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Clase For</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+
+
+let listadoDeNotas=[5,8,3,11,12,15,19,18,20,5,7,16,14,12,11]
+let malo= 0
+let regular= 0
+let bueno=0
+let suma=0
+for(var i = 0;  i< listadoDeNotas.length; i++){
+		console.log(listadoDeNotas[i])
+
+	if (listadoDeNotas[i]>=0 && listadoDeNotas[i]<=10){
+	malo=malo+1
+    }
+
+    if (listadoDeNotas[i]>=11 && listadoDeNotas[i]<=17){
+	regular=regular+1
+    }
+
+    if (listadoDeNotas[i]>=18 && listadoDeNotas[i]<=20){
+    bueno=bueno+1				
+    }
+	suma=suma+listadoDeNotas[i]
+}
+alert("cantidad malo= " +malo)
+alert("cantidad de relugulares= "+regular)
+alert("cantidad de buenos= "+bueno)
+alert("El Promedio= "+(suma/15))
+
+
+</script>
+</html>
